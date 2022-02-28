@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.page{
+    width: 95%;
+    margin: auto;
+    padding-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-heading {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+    color: #ec2d53;  
+}
+
+.records {
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+    display: grid;
+}
+
+.records .button {
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+    align-self: center;
+    background: #ec2d53;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.records .button:hover {
+    opacity: .5;
+}
+
+.records  .today {
+    background-color: rgba(6, 245, 101, 0.877);
+}
+
+.records  .yesterday {
+    background-color: #1404f5d8;
+}
+
+.records .previous {
+    background-color: #47025ce8;
+}
+
+.records  .add {
+    background-color: #e2a706e1;
+}
+
+
+
+.sub-heading {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #47025ce8;
+    font-size: .75rem;
+}
+
+.sub-heading .form-group input {
+    color: #47025ce8;
+    background-color: #fff;
+    outline: none;
+    border: #47025ce8 solid 1px;
+    border-radius: 5px;
+    width: 50px;
+}

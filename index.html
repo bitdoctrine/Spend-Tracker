@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="./style.css"  rel="stylesheet" />
+    <title>Spend Tracker</title>
+  </head>
+  <body class="body">
+    <main class="page">
+      <header class="main-heading">Spend Tracker</header>
+      <section class="records">
+          <button id="previous" class="button previous">Previous</button>
+          <button id="yesterday" class="button yesterday">Yesterday</button>
+          <button id="today" class="button today">So Far</button>
+          <button id="add" class="button add">Add Record</button>
+      </section>
+
+
+      <section id="add-modal" class="modal ">
+        <div class="modal-actions">
+          <form action="" id="add-form" class="modal-form">
+            <label for="name">
+              <input type="text" required class="input" name="name" id="name" placeholder="What to buy">
+            </label>
+            <label for="price">
+              <input type="number" name="price" id="price" required class="input" placeholder="How much">
+            </label>
+            <button name="submit" id="submit" class="submit-button btn " type="submit">Add</button>
+          </form>
+        </div>
+      </section>
+
+
+    </main>
+<script src="index.js"></script>
+  </body>
+</html>
