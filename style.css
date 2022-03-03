@@ -21,6 +21,11 @@ body {
   color: #ec2d53;
 }
 
+.link-button {
+  text-decoration: none;
+  color: #fff;
+}
+
 .records {
   margin-top: 3rem;
   width: 100%;
@@ -59,6 +64,11 @@ body {
 
 .records .add {
   background-color: #e2a706e1;
+}
+
+
+.records-header {
+  border-bottom: 1px dotted #47025ce8;
 }
 
 .sub-heading {
@@ -113,6 +123,11 @@ body {
     font-size: 1rem;
 }
 
+.cancel-button:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
 .input, .btn {
     display: block;
     margin: 1rem auto;
@@ -127,4 +142,25 @@ body {
 }
 .hidden {
   visibility: hidden;
+}
+
+
+
+/*entries */
+
+
+.entries  {
+  text-align: center;
+}
+
+.entry {
+  border-bottom: 1px dotted #47025ce8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entry a {
+  text-decoration: none;
+  color: #47025ce8;
 }
