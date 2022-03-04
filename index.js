@@ -59,7 +59,6 @@ if (addExpenseHandler) {
 function MainRecordHandler() {
   const date = new Date();
 
-  if (date.getHours() === 7 && date.getMinutes() <= 59) {
     const record = dailyExpenditure;
     const EntryDate = date.toLocaleDateString();
 
@@ -69,9 +68,10 @@ function MainRecordHandler() {
     };
 
     mainRecord.push(entryObject);
+    console.log(dailyExpenditure);
     console.log(mainRecord);
 
-  }
+  
 }
 
 MainRecordHandler();
@@ -89,12 +89,28 @@ function entriesHandler() {
   } else {
     mainRecord.forEach(item => {
       const entry = document.createElement("div");
+      const toolTip = document.createElement('div');
+      toolTip.className = 'tooltip hidden';
+      console.log(toolTip);
+      
       entry.className = "entry";
-      entry.innerHTML = `<h3><a href="#">${item.date}</a></h3>`;
+      entry.id = 'entry';
+
+      
+      entry.innerHTML = `<h3 class="entry-date"><a href="#">${item.date}</a></h3> <p class="entry-info"><a href="#">${item.entryRecord.length} expenditures<\a><p>`;
+      const toolTipItems = item.entryRecord;
+      console.log(toolTipItems)
+      toolTipItems.forEach(item => {
+        toolTip.innerHTML = `<ul class="expenditure-list>
+        <li class="expenditure-name">${item.expenseTime};
+        </ul>`
+      })
+
       entries.append(entry);
-    })
+    });
   }
 }
+
 
 
 if (entries) {

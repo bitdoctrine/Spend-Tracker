@@ -151,10 +151,13 @@ body {
 
 .entries  {
   text-align: center;
+  width: 100%;
 }
 
 .entry {
-  border-bottom: 1px dotted #47025ce8;
+  border-bottom: 1px dotted #b708ece8;
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
